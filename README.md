@@ -22,4 +22,47 @@ Issue: But this solution won't work in MULTI-THREADED environment
 Solution: Use lock(), unlock() to handle the multithreading to ensure only single object would be created.
 
 Refer: Singleton design pattern implementation for more understanding
+
 =================================================================================================================================
+
+Builder Design Pattern:
+    We have a class with lot of attributes and we wan't to ensure the object should only be created only after the validation.
+Ex:
+Validate PhoneNo, Age , etc., before the object for the class having attributes is created
+------------------------------------------------------------------------------------------------
+We can do this by creating multiple constructors, but this will lead to 
+    1. too many constructor creation
+    2. Method creation with same signature NOT Possible
+
+We can also do this by using Telescopic Constructors
+Ex:
+public class Student{
+    String name;
+    int age;
+    double psp;
+
+    Student(Sting name){
+        this.name = name;
+    }
+
+    Student(Sting name, int age){
+        this(name);
+        this.age = age;
+    }
+
+    Student(Sting name, int age, double psp){
+        this(name, age);
+        this.psp = psp;
+    }
+}
+
+Issue: but this is again not a preferred way, we may end-up with too many constructors again
+
+So we need, 
+    1. Something like a <Map> that can store value against keys,
+    2. Allows Values of specific data-types.
+    3. We should be able to perform a check on the name of Keys.
+
+Refer: Builder design pattern for the solution
+    
+   
