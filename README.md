@@ -128,7 +128,7 @@ Solution is: **_Prototype Design pattern_**
 
 Pros to use Prototype:
 1. NO Open Closed principle violation
-2. Client need not to know the internal details of the Student class
+2. Client needs not to know the internal details of the class for which he is creating copy
 
 Compulsion is: All the child classes should also override copy method otherwise it lead to unexpected results.
 
