@@ -68,7 +68,7 @@ Refer: Builder design pattern for the solution
     
 ------------------------------------------------------------------------------------------------
 
-Prototype Design Pattern:
+**_Prototype Design Pattern:_**
 
 Problem Statement: Given an object of a class, we need to create a copy of this given object.
 
