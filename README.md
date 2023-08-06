@@ -1,7 +1,8 @@
 # DesignPatterns
 Practicing implementation of various Design Patterns which iare crucial to use to have a good software design. I will add here notes regarding SOLID principles and their usage
 
-=====================================================================================================================
+======================================================================================================================
+
 Singleton Design Pattern:
     Allows us to create a only/single object of the class. Singleton objects are immutable.
 ------------------------------------------------------------------------------------------------
