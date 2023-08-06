@@ -3,7 +3,7 @@ Practicing implementation of various Design Patterns which iare crucial to use t
 
 =================================================================================================================================
 Singleton Design Pattern:
-    Allows us to only create a single object of the class. Singleton objects are immutable.
+    Allows us to create a only/single object of the class. Singleton objects are immutable.
 ------------------------------------------------------------------------------------------------
 Why Singleton?
     1. If the class having share resources
