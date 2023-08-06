@@ -1,6 +1,12 @@
 package src.PrototypeDesignPatternAndRegistry;
 
-public class ProStudent implements Prototype{
+public class Student implements Prototype{
+    private String name;
+    private int age;
+    private double psp;
+    private String batch;
+    private double averageBatchPSP;
+
     public void setName(String name) {
         this.name = name;
     }
@@ -21,15 +27,18 @@ public class ProStudent implements Prototype{
         this.averageBatchPSP = averageBatchPSP;
     }
 
-    private String name;
-    private int age;
-    private double psp;
-    private String batch;
-    private double averageBatchPSP;
+    public Student(){}
 
+    public Student(Student student){
+        this.name = student.name;
+        this.age = student.age;
+        this.psp = student.psp;
+        this.batch = student.batch;
+        this.averageBatchPSP = student.averageBatchPSP;
+    }
 
     @Override
-    public ProStudent clone() {
-        return null;
+    public Student clone() {
+        return new Student(this);
     }
 }

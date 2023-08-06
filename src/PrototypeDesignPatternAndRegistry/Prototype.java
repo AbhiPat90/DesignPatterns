@@ -1,4 +1,6 @@
 package src.PrototypeDesignPatternAndRegistry;
 
-public interface Prototype {
+public interface Prototype <T>{
+
+    T clone();
 }
